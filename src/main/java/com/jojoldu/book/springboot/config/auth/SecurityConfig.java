@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                                                      //H2 데이터베이스 콘솔과 같은 도구를 <iframe>으로 로드할 수 있음
                 .and()
                     .authorizeRequests()  //HTTP 요청에 대한 권한 부여 설정을 정의
-                    .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**").permitAll()  //특정 URL 패턴에 대한 요청을 인증 없이 접근할 수 있도록 허용
+                    .antMatchers("/", "/desiner/**", "/css/**", "/images/**", "/js/**", "/h2-console/**").permitAll()  //특정 URL 패턴에 대한 요청을 인증 없이 접근할 수 있도록 허용
                     .antMatchers("/api/v1/**").hasRole(Role.USER.name())  ///api/v1/**로 시작하는 모든 경로에 대해 USER 역할을 가진 사용자만 접근할 수 있도록 설정
                     .anyRequest().authenticated()  //위의 패턴에 일치하지 않는 모든 요청에 대해 인증을 요구
                 .and()

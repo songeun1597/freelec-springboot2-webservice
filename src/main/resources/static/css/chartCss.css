@@ -1,0 +1,66 @@
+
+.pagination {
+justify-content: center;
+}
+
+.pagination .page-item {
+margin: 0 5px; /* 페이지 항목 간의 간격 */
+}
+
+.pagination .page-link {
+border-radius: 5px;
+border: 1px solid #BFAE9F; /* 페이지 링크의 테두리 색상 */
+background-color: white; /* 페이지 링크의 배경 색상 */
+color: #BFAE9F; /* 페이지 링크의 텍스트 색상 */
+padding: 10px 15px; /* 페이지 링크의 패딩 */
+transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+background-color: #BFAE9F; /* 페이지 링크 호버 시 배경 색상 */
+color: white; /* 페이지 링크 호버 시 텍스트 색상 */
+border-color: #BFAE9F; /* 페이지 링크 호버 시 테두리 색상 */
+}
+
+.pagination .page-item.active .page-link {
+background-color: #BFAE9F; /* 활성 페이지 링크의 배경 색상 */
+color: white; /* 활성 페이지 링크의 텍스트 색상 */
+border-color: #BFAE9F; /* 활성 페이지 링크의 테두리 색상 */
+}
+
+.pagination .page-item.disabled .page-link {
+color: #ccc; /* 비활성 페이지 링크의 텍스트 색상 */
+border-color: #ccc; /* 비활성 페이지 링크의 테두리 색상 */
+}
+
+.chart-container {
+position: absolute; /* 배경 이미지 위에 위치시키기 위한 설정 */
+margin: 20px 0;
+padding: 20px;
+background-color: rgba(255, 255, 255, 0.9); /* 투명도가 있는 흰색 배경 */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 1200px;
+}
+
+.table-container {
+margin-top: 20px;
+padding: 20px;
+background-color: #ffffff; /* 하얀색 배경 */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+text-align: center;
+}
+
+.table thead th {
+background-color: #BFAE9F;
+color: white;
+}
+.table {
+width: 100%;
+border-collapse: collapse;
+}
